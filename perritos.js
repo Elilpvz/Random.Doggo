@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded",	() => {
     const dogBtn = document.querySelector('.dog-btn'),
           dogFigure = document.querySelector('.dog-figure'),
           dogCaption = document.querySelector('.dog-caption'),
-          // intente añadir mas adjetivos pero se me fastidia todo
+          // los tipos de perritos
           adjectives = ["Beautiful", "Beloved", "Blissful", "Bold","Brilliant","Charming", "Cute", "Dazzling", "Fabulous", "Fantastic", "Fearless", "Friendly", "Funny", "Gentle", "Glorious", "Good", "Gorgeous", "Graceful", "Great", "Handsome", "Happy", "Kind", "Lively", "Lovable", "Lovely", "Magnificent", "Majestic", "Marvelous", "Perfect", "Playful", "Precious", "Radiant", "Remarkable", "Sensational", "Spectacular", "Splendid", "Stunning", "Superb", "Talented", "Vibrant", "Wonderful"];
 
  
@@ -16,7 +16,8 @@ window.addEventListener("DOMContentLoaded",	() => {
     function getDog() {
 
         
-        fetch('https://random.dog/woof.json')
+        fetch('https://random.dog/woof.json') // de aqui es de donde se cogen las imagenes y videos, intente hacerlo subiendo las imagenes a git y poniendo el enlace 
+        // pero no me funcionaba :( 
             .then(res => res.json())
             .then(data => {
 
